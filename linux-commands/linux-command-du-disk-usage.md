@@ -1,4 +1,4 @@
-# Use `du` for disk usage
+# `du` for disk usage
 
 ## Tried
 
