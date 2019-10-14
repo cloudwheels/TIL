@@ -242,3 +242,11 @@ and contain gobbledegook!
 ���!���'a���t�΢���Cq�E����`�q�g�a.�/�f���Ů�6�'U�凊�x���?�AK�ڇǩ�<�~~ߢV�^=�S����s$�΅�4�2����s�ۺ��^s�!GٍF)��n�]9+�7"a�k�
 ͫ@�[��1��XԤ
 ```
+
+## Editing / decrypting
+
+Use `blackbox_edit_start <file>` and `blackbox_edit_start <file>` to decrypt/open, edit, then reencrypt/close the file.
+
+** SEE THE REPO README FOR FULL USAGE INSTRUCTIONS **
+
+https://github.com/StackExchange/blackbox/blob/master/README.md
