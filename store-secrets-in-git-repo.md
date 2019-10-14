@@ -123,8 +123,122 @@ generator a better chance to gain enough entropy.
 
 THE KEYS WILL BE GENERATED AND ADDED TO YOUR PUBLIC & PRIVATE KEYRINGS
 
+```
+gpg: key 0E81F6E4E7CE4BD5 marked as ultimately trusted
+gpg: directory '/home/nigel/.gnupg/openpgp-revocs.d' created
+gpg: revocation certificate stored as '/home/nigel/.gnupg/openpgp-revocs.d/54629BAC8EF72D2709E32A3C0E81F6E4E7CE4BD5.rev'
+public and secret key created and signed.
+
+pub   rsa4096 2019-10-14 [SC]
+      54629BAC8EF72D2709E32A3C0E81F6E4E7CE4BD5
+      54629BAC8EF72D2709E32A3C0E81F6E4E7CE4BD5
+uid                      Nigel (For Blackbox) <nigel@cloudwheels.net>
+sub   rsa4096 2019-10-14 [E]
+```
 ### Useful sources on understanding / using GPG Keys:
 
 https://www.tutonics.com/2012/11/gpg-encryption-guide-part-1.html
 
+## Encrypting files in the repo
 
+E.g. Create a sample repo & text file
+
+`$ mkdir blackbox-test && cd $_`
+
+`$ echo "This is a secret" > test.txt`
+
+`$ git init && git add . && git commit -m "intial commit"`
+```
+Initialized empty Git repository in /home/nigel/blackbox-test/.git/
+[master (root-commit) f672842] intial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+ ```
+### Initialise repo to use blackbox
+
+`$ blackbox_initialize`
+```
+Enable blackbox for this git repo? (yes/no) y
+VCS_TYPE: git
+
+
+NEXT STEP: You need to manually check these in:
+      git commit -m'INITIALIZE BLACKBOX' .blackbox /home/nigel/blackbox-test/.gitignore
+```
+`$ git commit -m'INITIALIZE BLACKBOX' .blackbox /home/nigel/blackbox-test/.gitignore`
+```
+[master 89d89dc] INITIALIZE BLACKBOX
+ 3 files changed, 3 insertions(+)
+ create mode 100644 .blackbox/blackbox-admins.txt
+ create mode 100644 .blackbox/blackbox-files.txt
+ create mode 100644 .gitignore
+ ```
+ ### Add admins / keys to the repo
+
+`blackbox_addadmin <gpg-key>`
+
+e.g.
+
+`$ blackbox_addadmin 0E81F6E4E7CE4BD5`
+```
+gpg: keybox '/home/nigel/blackbox-test/.blackbox/pubring.kbx' created
+gpg: /home/nigel/blackbox-test/.blackbox/trustdb.gpg: trustdb created
+gpg: key 0E81F6E4E7CE4BD5: public key "Nigel (For Blackbox) <nigel@cloudwheels.net>" imported
+gpg: Total number processed: 1
+gpg:               imported: 1
+
+
+NEXT STEP: You need to manually check these in:
+      git commit -m'NEW ADMIN: 0E81F6E4E7CE4BD5' .blackbox/pubring.kbx .blackbox/trustdb.gpg .blackbox/blackbox-admins.txt
+```
+`git commit -m'NEW ADMIN: 0E81F6E4E7CE4BD5' .blackbox/pubring.kbx .blackbox/trustdb.gpg .blackbox/blackbox-admins.txt`
+```
+[master 5a09d20] NEW ADMIN: 0E81F6E4E7CE4BD5
+ 3 files changed, 1 insertion(+)
+ create mode 100644 .blackbox/pubring.kbx
+ create mode 100644 .blackbox/trustdb.gpg
+ ```
+ 
+ ### Register / Encrpyt file
+ 
+ `$ blackbox_register_new_file test.txt`
+```
+========== PLAINFILE test.txt
+========== ENCRYPTED test.txt.gpg
+========== Importing keychain: START
+gpg: Total number processed: 1
+gpg:              unchanged: 1
+========== Importing keychain: DONE
+========== Encrypting: test.txt
+========== Encrypting: DONE
+========== Adding file to list.
+========== CREATED: test.txt.gpg
+========== UPDATING REPO:
+rm 'test.txt'
+NOTE: "already tracked!" messages are safe to ignore.
+[master aeac05b] registered in blackbox: test.txt
+ 3 files changed, 2 insertions(+)
+ create mode 100644 test.txt.gpg
+========== UPDATING VCS: DONE
+Local repo updated.  Please push when ready.
+    git push
+```
+
+The file will be encrpted (.gpg extension added)...
+
+`$ ls`
+
+`test.txt.gpg`
+
+and contain gobbledegook!
+
+`cat test.txt.gpg`
+```
+�
+ ��?�Z v���N�7� ��5�ѪG��ɚU>��˾ ��fܻ��p���pi"b���p���)3q
+�����!I�w�?�=yt�OA;y
+���o=b�
+3A�;A�ڗT#h�(�mk���Y���g����kÔ�s�ҵ0�Ō��kE4VNw^����0V�h�5P*��={]���*h�l���~z"J��h�9hq"    �.0ݟ�Ӆʨ�^�:�5�>��~?��[���fp&�6d̯�d�b���:]v� ��H�X/�Q���.����1
+���!���'a���t�΢���Cq�E����`�q�g�a.�/�f���Ů�6�'U�凊�x���?�AK�ڇǩ�<�~~ߢV�^=�S����s$�΅�4�2����s�ۺ��^s�!GٍF)��n�]9+�7"a�k�
+ͫ@�[��1��XԤ
+```
