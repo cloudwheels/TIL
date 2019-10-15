@@ -18,8 +18,8 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   Snippets of information I might like to remember. 
   For personal use but feel free to browse and/or make suggestions!
-twitter_username: 
-github_username: 
+twitter_username: nejw 
+github_username: cloudwheels 
 minimal_mistakes_skin: default
 search: true
 
@@ -59,11 +59,11 @@ plugins:
 author:
   name   : "Nigel Wheeler"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Lifelong learner."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://nigelwheeler.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
