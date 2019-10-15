@@ -15,7 +15,7 @@ Aretha Franklin-Precious Lord Take Me Hand
 
 <https://youtu.be/HVMeRULuUB4>
 
-{% include video id="HVMeRULuUB4 provider="youtube" %}
+{% include video id="HVMeRULuUB4" provider="youtube" %}
 
 
 Tonight Is The Night - Betty Wright (1978)
