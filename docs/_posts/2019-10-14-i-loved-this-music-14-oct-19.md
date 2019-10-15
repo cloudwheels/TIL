@@ -10,6 +10,7 @@ Mightly Clouds of Joy- Pray For Me
 
 {% include video id="XOMGNUdr5F4" provider="youtube" %}
 
+---
 
 Aretha Franklin-Precious Lord Take Me Hand
 
@@ -17,6 +18,7 @@ Aretha Franklin-Precious Lord Take Me Hand
 
 {% include video id="HVMeRULuUB4" provider="youtube" %}
 
+---
 
 Tonight Is The Night - Betty Wright (1978)
 
