@@ -2,6 +2,8 @@
 permalink: /about/
 title: "About"
 comments: true
+header:
+  image: /assets/images/about-walnut-brain.jpg  
 ---
 
 ***TIL - Today I Learned*** - is an acronym popular on some social news sites where users share spontaneous snippets of information they have come across, as opposed to fully researched, in-depth comments.
