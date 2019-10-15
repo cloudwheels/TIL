@@ -1,4 +1,12 @@
-# Package Applications
+---
+excerpt: >-
+    The fpm tool can be used to package applications for installation, for example as debian files.
+categories: [development]
+tags:
+    - linux
+    - packaging
+    - debian
+---
 
 ## fpm
 

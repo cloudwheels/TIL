@@ -1,4 +1,12 @@
-# Setup a quick Github pages site
+---
+excerpt: >-
+    Using the minimal mistakes template as a starter project to quickly set up websites for free using Github pages.
+categories: [development]
+tags:
+    - websites
+    - jeckyll
+    - github
+---
 
 ## Most straightforward - user or organisation site
 
