@@ -111,7 +111,11 @@ Navigate to `Github Pages` section in the repo `Settings` page and select master
 
 **TA DA!**
 
-You can now start editing files.
+https://mightycloud.github.io
+
+You can now start editing files!
+
+---
 
 ## Set up project site
 
@@ -124,6 +128,45 @@ The site will be served at https://cloudwheels.github.io/til.
 A project site can either be served from a `docs/` folder on the master branch or a separate branch called `gh-pages`.
 
 
+## Project site using `/docs` folder on master branch
+
+Using branches can be confusing if you are not familiar with them and may have unintended consequences, so this is probably the easier of the two options for project sites
+
+
+### 1. Clone exisiting repo (*website repo*) (or setup a new project)
+
+
+`$ git clone https://github.com/cloudwheels/TIL.git`
+
+
+### 2. Create a /docs folder 
+
+`$ mkdir TIL/docs`
+
+
+### 3. Clone & copy starter site to /docs directory
+
+`$ git clone https://github.com/cloudwheels/mm-github-pages-starter.git`
+
+`$ cp -r mm-github-pages-starter/* TIL/docs`
+
+### 4. Change to project directory, add & commit files, push to master branch on Github.com
+
+`$ cd TIL`
+
+`$ git add . && git commit -m "create /docs folder and add website files"`
+
+`$ git push -u origin master` 
+
+### 5. Configure settings on Github.com to serve from /docs folder
+
+**TA DA!**
+
+https://cloudwheels.github.io/til
+
+---
+
+## Project site using `gh-pages` branch
 
 This example if for creating a site for the existing repo on a gh-pages branch.
 
