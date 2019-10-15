@@ -1,8 +1,13 @@
 ---
 permalink: /about/
 title: "About"
+comments: true
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+***TIL - Today I Learned*** - is an acronym popular on some social news sites where users share spontaneous snippets of information they have come across, as opposed to fully researched, in-depth comments.
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+This site is my personal attempt to record such morcels of knowledge. They are largely intended as an aide-memoir. Some are work focussed, some are completely random.
+
+In many cases it is more a case of 'Today I thought it would be a good idea to write down', rather than genuine epiphany. If are you are a potential employer of some form of judgemental troll, please accept that I probably didn't just learn how to boil an egg, it's just I thought I'd record it here.
+
+All entries at least start as a short sketch. Some may be developed here or elsewhere. Please use the information if you wish, entirely at your own risk, or feel free to send any comments.
