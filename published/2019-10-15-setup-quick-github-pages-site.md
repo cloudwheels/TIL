@@ -105,8 +105,7 @@ To https://github.com/mightycloud/mightycloud.github.io.git
 
 Navigate to `Github Pages` section in the repo `Settings` page and select master branch.
 
-
-![Enable github pages for the repo](2019-10-15-09-34-11.png)
+![Enable github pages for the repo](2019-10-15-11-41-08.png)
 
 
 **TA DA!**
