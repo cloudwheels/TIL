@@ -23,6 +23,15 @@ github_username: cloudwheels
 minimal_mistakes_skin: default
 search: true
 
+# Comments
+comments:
+  provider: "facebook"
+  facebook:
+    appid: # optional
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
