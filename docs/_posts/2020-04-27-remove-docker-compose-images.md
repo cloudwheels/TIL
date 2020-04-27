@@ -11,7 +11,7 @@ Stop and remove images in a docker compose project
 ```
 docker-compose down --rmi all -v
 ```
-It may be necessary to pruen the images to fully remove them from disk
+It may be necessary to prune the images to fully remove them from disk
 ```
 docker image prune --all
 ```
@@ -21,6 +21,6 @@ docker image prune --all
 eyJwcm9wZXJ0aWVzIjoidGFnczogZG9ja2VyXG5jYXRlZ29yaW
 VzOiBkZXZlbG9wbWVudFxuZXhjZXJwdDogcmVtb3ZpbmcgZG9j
 a2VyIGNvbXBvc2UgY29udGFpbmVycyBhbmQgaW1hZ2VzIHVzaW
-5nIHJtaSBjb21tYW5kXG4iLCJoaXN0b3J5IjpbNjIwOTkyODE2
-LC04NTAzMDEzNjcsLTIwODg3NDY2MTJdfQ==
+5nIHJtaSBjb21tYW5kXG4iLCJoaXN0b3J5IjpbLTU2OTI3NzM3
+OCw2MjA5OTI4MTYsLTg1MDMwMTM2NywtMjA4ODc0NjYxMl19
 -->
