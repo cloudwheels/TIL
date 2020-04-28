@@ -6,7 +6,7 @@ tags:
 categories:
   - networks
 excerpt: >-
-   Fix can ping with IP address but cannot ping with domain name
+   Fix: can ping with IP address but cannot ping with domain name
 ---
 ### HOWTO : Fix Temporary Failure In Name Resolution On Ubuntu 
 
@@ -23,5 +23,5 @@ You can ping with domain name now.
 
 source: [https://samiux.blogspot.com/2019/01/howto-fix-temporary-failure-in-name.html](https://samiux.blogspot.com/2019/01/howto-fix-temporary-failure-in-name.html)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3MjM4OTY0XX0=
+eyJoaXN0b3J5IjpbMTIwNTg2NjIxNF19
 -->
