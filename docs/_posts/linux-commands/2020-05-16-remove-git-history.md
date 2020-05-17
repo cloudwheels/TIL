@@ -6,6 +6,8 @@ categories:
 excerpt: >-
    Safely removing git history
 ---
+https://stackoverflow.com/a/26000395
+
 Deleting the  `.git`  folder may cause problems in your git repository. If you want to delete all your commit history but keep the code in its current state, it is very safe to do it as in the following:
 
 1.  Checkout
@@ -32,5 +34,5 @@ Deleting the  `.git`  folder may cause problems in your git repository. If you w
     
     `git push -f origin master`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MTY2NzA1MF19
+eyJoaXN0b3J5IjpbMTAyOTE5MzM3Nl19
 -->
